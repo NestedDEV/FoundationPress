@@ -7,9 +7,9 @@
  * @since FoundationPress 1.0.0
  */
 
-register_nav_menus(array(
-	'top-bar-r'  => 'Right Top Bar',
-	'mobile-nav' => 'Mobile',
+register_nav_menus( array(
+	'top-bar-r'  => esc_html__( 'Right Top Bar', 'foundationpress' ),
+	'mobile-nav' => esc_html__( 'Mobile', 'foundationpress' ),
 ));
 
 
@@ -101,7 +101,7 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				echo '<li class="separator separator-home"> ' . $separator . ' </li>';
 			}
 
-			if ( is_single() ) {
+			if ( is_single() && ! is_attachment() ) {
 
 				// Single post (Only display the first category)
 				echo '<li class="item-cat item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><a class="bread-cat bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '" href="' . get_category_link($category[0]->term_id) . '" title="' . $category[0]->cat_name . '">' . $category[0]->cat_name . '</a></li>';
@@ -110,12 +110,43 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				}
 				echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
 
-			} else if ( is_category() ) {
+			} elseif ( is_category() ) {
 
 				// Category page
-				echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><strong class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category[0]->cat_name . '</strong></li>';
+				// Get the current category
+				$current_category = $wp_query->queried_object;
+				echo '<li class="item-current item-cat-' . $current_category->term_id . ' item-cat-' . $current_category->category_nicename . '"><strong class="bread-current bread-cat-' . $current_category->term_id . ' bread-cat-' . $current_category->category_nicename . '">' . $current_category->cat_name . '</strong></li>';
 
-			} else if ( is_page() ) {
+			} elseif ( is_tax() ) {
+
+				// Tax archive page
+				$queried_object = get_queried_object();
+				$name = $queried_object->name;
+				$slug = $queried_object->slug;
+				$tax = $queried_object->taxonomy;
+				$term_id = $queried_object->term_id;
+				$parent = $queried_object->parent;
+
+				if( $parent ) {
+					$parents = [];
+					// Loop through all term ancestors
+					while ( $parent ) {
+						$parent_term = get_term($parent, $tax);
+						// The output will be reversed, so separator goes first
+						if ( $separatorclass ) {
+							$parents[] = '<li class="separator separator-' . $parent . '"> ' . $separator . ' </li>';
+						}
+						$parents[] = '<li class="item-parent item-parent-' . $parent . '"><a class="bread-parent bread-parent-' . $parent . '" href="' . get_term_link($parent) . '" title="' . $parent_term->name . '">' . $parent_term->name . '</a></li>';
+
+						$parent = $parent_term->parent;
+					}
+
+					echo implode( array_reverse( $parents ) );
+				}
+
+				echo '<li class="item-current item-tax-' . $term_id . ' item-tax-' . $slug . '">' . $name . '</li>';
+
+		} elseif ( is_page() ) {
 
 				// Standard page
 				if ( $post->post_parent ) {
@@ -147,7 +178,7 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 					echo '<li class="current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
 
 				}
-			} else if ( is_tag() ) {
+			} elseif ( is_tag() ) {
 
 				// Tag page
 				// Get tag information
@@ -177,7 +208,7 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				// Day display
 				echo '<li class="current item-' . get_the_time('j') . '">' . get_the_time('jS') . ' ' . get_the_time('M') . ' Archives</li>';
 
-			} else if ( is_month() ) {
+			} elseif ( is_month() ) {
 
 				// Month Archive
 				// Year link
@@ -189,12 +220,12 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				// Month display
 				echo '<li class="item-month item-month-' . get_the_time('m') . '">' . get_the_time('M') . ' Archives</li>';
 
-			} else if ( is_year() ) {
+			} elseif ( is_year() ) {
 
 				// Display year archive
 				echo '<li class="current item-current-' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</li>';
 
-			} else if ( is_author() ) {
+			} elseif ( is_author() ) {
 
 				// Auhor archive
 				// Get the author information
@@ -204,26 +235,31 @@ if ( ! function_exists( 'foundationpress_breadcrumb' ) ) {
 				// Display author name
 				echo '<li class="current item-current-' . $userdata->user_nicename . '">Author: ' . $userdata->display_name . '</li>';
 
-			} else if ( get_query_var('paged') ) {
+			} elseif ( get_query_var('paged') ) {
 
 				// Paginated archives
 				echo '<li class="current item-current-' . get_query_var('paged') . '">' . __('Page', 'foundationpress' ) . ' ' . get_query_var('paged') . '</li>';
 
-			} else if ( is_search() ) {
+			} elseif ( is_search() ) {
 
 				// Search results page
-				echo '<li class="current item-current-' . get_search_query() . '">Search results for: ' . get_search_query() . '</li>';
+				echo '<li class="current item-current-search">Search results for: ' . get_search_query() . '</li>';
 
+			} elseif ( is_post_type_archive() ) {
+				
+				// Custom Post Type Archive Page
+				echo '<li class="current">' . post_type_archive_title( '', false ) . '</li>';
+				
 			} elseif ( is_404() ) {
 
 				// 404 page
 				echo '<li>Error 404</li>';
-			}
+			} // End if().
 		} else {
 			if ( $showhome ) {
 				echo '<li class="item-home current">' . $home_title . '</li>';
 			}
-		}
+		} // End if().
 		echo '</ul>';
 	}
-}
+} // End if().

@@ -1,12 +1,316 @@
 # Change Log
 
-## [Unreleased](https://github.com/olefredrik/FoundationPress/tree/HEAD)
+## [v2.10.2](https://github.com/olefredrik/FoundationPress/tree/v2.10.2) (2017-08-08)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.10.1...v2.10.2)
 
-[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.6.2...HEAD)
+**Fixed bugs:**
+
+- "Active" class no longer being applied to Topbar link on active page [\#933](https://github.com/olefredrik/FoundationPress/issues/933)
+- .active class applied to .main-menu li when using custom relative URLs in Menus [\#914](https://github.com/olefredrik/FoundationPress/issues/914)
 
 **Closed issues:**
 
+- Missing script: watch [\#1028](https://github.com/olefredrik/FoundationPress/issues/1028)
+- Smooth Scroll not added. [\#1027](https://github.com/olefredrik/FoundationPress/issues/1027)
+- Foundation 6.4.0 [\#1008](https://github.com/olefredrik/FoundationPress/issues/1008)
+- WooCommerce 3.0 Compatibility \(New Zoom/Lightbox feature\) [\#991](https://github.com/olefredrik/FoundationPress/issues/991)
+- WooCommerce compatibility [\#982](https://github.com/olefredrik/FoundationPress/issues/982)
+- Main menu with dropdowns - tapping sub-item link in iOS closes menu, does nothing else [\#975](https://github.com/olefredrik/FoundationPress/issues/975)
+- responsive toggle menu stops working on 6.3.1 [\#973](https://github.com/olefredrik/FoundationPress/issues/973)
+- Duplicate search bar when widget search produces no results [\#970](https://github.com/olefredrik/FoundationPress/issues/970)
+- Dropdown menu issue [\#969](https://github.com/olefredrik/FoundationPress/issues/969)
+- Header is covering top menu [\#938](https://github.com/olefredrik/FoundationPress/issues/938)
+- How to make dropdowns in main nav open right [\#862](https://github.com/olefredrik/FoundationPress/issues/862)
+- Theme Check Errors - Should I Be Worried? [\#840](https://github.com/olefredrik/FoundationPress/issues/840)
+- Woocommerce template overrides [\#718](https://github.com/olefredrik/FoundationPress/issues/718)
+- foundationpress\_before\_content function not implemented [\#601](https://github.com/olefredrik/FoundationPress/issues/601)
+- No rss/atom link?  [\#566](https://github.com/olefredrik/FoundationPress/issues/566)
+- Stupid Question - how to set menu order to follow page order [\#541](https://github.com/olefredrik/FoundationPress/issues/541)
+- Move right menu under left menu? [\#531](https://github.com/olefredrik/FoundationPress/issues/531)
+
+**Merged pull requests:**
+
+- Active class menu item [\#1032](https://github.com/olefredrik/FoundationPress/pull/1032) ([olefredrik](https://github.com/olefredrik))
+- Include only XY-grid and disable float-grid by default [\#1031](https://github.com/olefredrik/FoundationPress/pull/1031) ([olefredrik](https://github.com/olefredrik))
+- Add fontawesome handle [\#1030](https://github.com/olefredrik/FoundationPress/pull/1030) ([olefredrik](https://github.com/olefredrik))
+- Dependencies [\#1024](https://github.com/olefredrik/FoundationPress/pull/1024) ([olefredrik](https://github.com/olefredrik))
+- Woo 3 compatibility [\#1021](https://github.com/olefredrik/FoundationPress/pull/1021) ([linuxbastard](https://github.com/linuxbastard))
+
+## [v2.10.1](https://github.com/olefredrik/FoundationPress/tree/v2.10.1) (2017-08-05)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.10.0...v2.10.1)
+
+**Merged pull requests:**
+
+- Xy grid in footer [\#1023](https://github.com/olefredrik/FoundationPress/pull/1023) ([olefredrik](https://github.com/olefredrik))
+
+## [v2.10.0](https://github.com/olefredrik/FoundationPress/tree/v2.10.0) (2017-08-05)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.9.3...v2.10.0)
+
+**Closed issues:**
+
+- Expected response code 250 but got code "530", with message "530 5.7.1 Authentication required [\#1019](https://github.com/olefredrik/FoundationPress/issues/1019)
+- Local to Live Pulling all Changes [\#1012](https://github.com/olefredrik/FoundationPress/issues/1012)
+- ERR! Invalid name: "@gulp-sourcemaps/map-sources" [\#986](https://github.com/olefredrik/FoundationPress/issues/986)
+- functions.php [\#981](https://github.com/olefredrik/FoundationPress/issues/981)
+- Responsive Image height and width [\#972](https://github.com/olefredrik/FoundationPress/issues/972)
+- How do you handle the "is-active" class on orbit slider when using ACF to add images [\#945](https://github.com/olefredrik/FoundationPress/issues/945)
+- How do I support the built in WP Gallery in Foundationpress [\#937](https://github.com/olefredrik/FoundationPress/issues/937)
+- Error: 'libsass' bindings not found. Try reinstalling 'node-sass'? [\#936](https://github.com/olefredrik/FoundationPress/issues/936)
+- Problem with navigation touch events \(menu not working on ipad\) [\#935](https://github.com/olefredrik/FoundationPress/issues/935)
+- Responsive Accordion Tabs [\#931](https://github.com/olefredrik/FoundationPress/issues/931)
+- updating npm packages - guiding lines? [\#920](https://github.com/olefredrik/FoundationPress/issues/920)
+- FoundationPress generator [\#919](https://github.com/olefredrik/FoundationPress/issues/919)
+- Compilation issue [\#915](https://github.com/olefredrik/FoundationPress/issues/915)
+- is\_single returns true for attachment page \(navigation.php\) [\#871](https://github.com/olefredrik/FoundationPress/issues/871)
+- Is FP compatible with the WP Theme Directory guidelines? [\#849](https://github.com/olefredrik/FoundationPress/issues/849)
+- Active dropdown always showing. [\#814](https://github.com/olefredrik/FoundationPress/issues/814)
+- SCSS Compiling Issue / Components Not Importing [\#799](https://github.com/olefredrik/FoundationPress/issues/799)
+- Should Aside be used for the sidebar? [\#798](https://github.com/olefredrik/FoundationPress/issues/798)
+- npm run production watches files [\#745](https://github.com/olefredrik/FoundationPress/issues/745)
+- Nav Questions [\#639](https://github.com/olefredrik/FoundationPress/issues/639)
+
+**Merged pull requests:**
+
+- Foundation update [\#1022](https://github.com/olefredrik/FoundationPress/pull/1022) ([olefredrik](https://github.com/olefredrik))
+
+## [v2.9.3](https://github.com/olefredrik/FoundationPress/tree/v2.9.3) (2017-07-28)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.9.2...v2.9.3)
+
+**Fixed bugs:**
+
+- entering a comment redirects to wp-comments-posts.php  [\#505](https://github.com/olefredrik/FoundationPress/issues/505)
+
+**Closed issues:**
+
+- npm ERR! A complete log of this run can be found in: [\#1016](https://github.com/olefredrik/FoundationPress/issues/1016)
+- Page builder to use with FoundationPress [\#1015](https://github.com/olefredrik/FoundationPress/issues/1015)
+- ron script run packager [\#1013](https://github.com/olefredrik/FoundationPress/issues/1013)
+- After Node update, Issue running npm run production [\#1011](https://github.com/olefredrik/FoundationPress/issues/1011)
+- Sticky Mobile Nav \(Off Canvis\) + Force the page to scroll to top on open. Set to False but not working. [\#1009](https://github.com/olefredrik/FoundationPress/issues/1009)
+- Float used in spite of flex grid [\#1005](https://github.com/olefredrik/FoundationPress/issues/1005)
+- Issue with Equalizer with images [\#1004](https://github.com/olefredrik/FoundationPress/issues/1004)
+- fail NPM install because Node-sass repo doesn't exist [\#1002](https://github.com/olefredrik/FoundationPress/issues/1002)
+- localhost:3000 shows 2017 theme [\#1001](https://github.com/olefredrik/FoundationPress/issues/1001)
+- Ajaxifying a javascript module  [\#999](https://github.com/olefredrik/FoundationPress/issues/999)
+- Modify a module in components, not rebuilding foundation.js [\#998](https://github.com/olefredrik/FoundationPress/issues/998)
+- FoundationPress doesn't seem to be working with ajaxify \(AWS plugin\) [\#994](https://github.com/olefredrik/FoundationPress/issues/994)
+- Video embed not working - CANCELLED [\#993](https://github.com/olefredrik/FoundationPress/issues/993)
+- Sticky top bar with content above [\#992](https://github.com/olefredrik/FoundationPress/issues/992)
+- npm install fails [\#990](https://github.com/olefredrik/FoundationPress/issues/990)
+- Travis CI fail wordpress-coding-standards [\#985](https://github.com/olefredrik/FoundationPress/issues/985)
+- anyone is using scrollmagic with FoundationPress [\#983](https://github.com/olefredrik/FoundationPress/issues/983)
+- Off canvas menu \(left and right\) disappearing every other hamburger menu click [\#977](https://github.com/olefredrik/FoundationPress/issues/977)
+- foundation.css Loading in Visual Editor [\#976](https://github.com/olefredrik/FoundationPress/issues/976)
+- Building Foundation-Sites via Maven does not work [\#974](https://github.com/olefredrik/FoundationPress/issues/974)
+- \_settings.scss and \_foundation.scss importing non-existent files [\#966](https://github.com/olefredrik/FoundationPress/issues/966)
+- Installation error: node-sass [\#964](https://github.com/olefredrik/FoundationPress/issues/964)
+- Update Travis CI Build Checks [\#959](https://github.com/olefredrik/FoundationPress/issues/959)
+- How many of you are using Flexbox flex grid? [\#943](https://github.com/olefredrik/FoundationPress/issues/943)
+- Sass Error [\#942](https://github.com/olefredrik/FoundationPress/issues/942)
+- Typo for exclude in config [\#940](https://github.com/olefredrik/FoundationPress/issues/940)
+- Adding a transition to dropdown responsive menu [\#939](https://github.com/olefredrik/FoundationPress/issues/939)
+- Changing responsive menu toggle breakpoint [\#932](https://github.com/olefredrik/FoundationPress/issues/932)
+- npm run watch [\#921](https://github.com/olefredrik/FoundationPress/issues/921)
+- Buddypress [\#856](https://github.com/olefredrik/FoundationPress/issues/856)
+- $foundation-palette: Not compiling [\#816](https://github.com/olefredrik/FoundationPress/issues/816)
+- Npm run / build 'clean' javascript error - Gulp/Node/Windows 7 Dependencies [\#792](https://github.com/olefredrik/FoundationPress/issues/792)
+- Navigation dropdown always open [\#783](https://github.com/olefredrik/FoundationPress/issues/783)
+- Theme check errors [\#641](https://github.com/olefredrik/FoundationPress/issues/641)
+- Custom Header Image [\#467](https://github.com/olefredrik/FoundationPress/issues/467)
+
+**Merged pull requests:**
+
+- Update gulp-sourcemaps to latest version [\#1018](https://github.com/olefredrik/FoundationPress/pull/1018) ([olefredrik](https://github.com/olefredrik))
+- Remove travis ci [\#1017](https://github.com/olefredrik/FoundationPress/pull/1017) ([olefredrik](https://github.com/olefredrik))
+- Update packages [\#1014](https://github.com/olefredrik/FoundationPress/pull/1014) ([olefredrik](https://github.com/olefredrik))
+- Add template and settings for demosite [\#1007](https://github.com/olefredrik/FoundationPress/pull/1007) ([olefredrik](https://github.com/olefredrik))
+- Add taxonomies support to breadcrumbs [\#1006](https://github.com/olefredrik/FoundationPress/pull/1006) ([skoldin](https://github.com/skoldin))
+- CPT Archive Support for FoundationPress Breadcrumb [\#1003](https://github.com/olefredrik/FoundationPress/pull/1003) ([derweili](https://github.com/derweili))
+- Make nav menu names translatable [\#1000](https://github.com/olefredrik/FoundationPress/pull/1000) ([Aetles](https://github.com/Aetles))
+- Fixed Edit link [\#997](https://github.com/olefredrik/FoundationPress/pull/997) ([dantahoua](https://github.com/dantahoua))
+- Remove search query from current breadcrumb class [\#995](https://github.com/olefredrik/FoundationPress/pull/995) ([conorbarclay](https://github.com/conorbarclay))
+- Kitchen Sink Updated [\#988](https://github.com/olefredrik/FoundationPress/pull/988) ([marcusconnor](https://github.com/marcusconnor))
+- Optimize CSS & Sync with Vanilla Foundation [\#987](https://github.com/olefredrik/FoundationPress/pull/987) ([EricRihlmann](https://github.com/EricRihlmann))
+- Fix Category page breadcrumb [\#984](https://github.com/olefredrik/FoundationPress/pull/984) ([roby94](https://github.com/roby94))
+- Fix Off-Canvas Menu Bug [\#980](https://github.com/olefredrik/FoundationPress/pull/980) ([EricRihlmann](https://github.com/EricRihlmann))
+- Update Pagination Centered [\#979](https://github.com/olefredrik/FoundationPress/pull/979) ([codenamesrk](https://github.com/codenamesrk))
+- Removed broken links [\#978](https://github.com/olefredrik/FoundationPress/pull/978) ([millerdrew](https://github.com/millerdrew))
+- fix hard-coded height of menu items [\#971](https://github.com/olefredrik/FoundationPress/pull/971) ([jfilter](https://github.com/jfilter))
+- Update font-awesome to v4.7.0 [\#967](https://github.com/olefredrik/FoundationPress/pull/967) ([olefredrik](https://github.com/olefredrik))
+- Changed search template to match default page mark up [\#963](https://github.com/olefredrik/FoundationPress/pull/963) ([GarySwift](https://github.com/GarySwift))
+- Update version number to 2.9.2 [\#962](https://github.com/olefredrik/FoundationPress/pull/962) ([jcallery](https://github.com/jcallery))
+
+## [v2.9.2](https://github.com/olefredrik/FoundationPress/tree/v2.9.2) (2017-03-17)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.9.1...v2.9.2)
+
+**Closed issues:**
+
+- cd [\#950](https://github.com/olefredrik/FoundationPress/issues/950)
+- cd [\#949](https://github.com/olefredrik/FoundationPress/issues/949)
+- Top Level Links - Mobile [\#947](https://github.com/olefredrik/FoundationPress/issues/947)
+
+**Merged pull requests:**
+
+- Add PHP 5.6 and Nightly to Travis CI  [\#961](https://github.com/olefredrik/FoundationPress/pull/961) ([EricRihlmann](https://github.com/EricRihlmann))
+
+## [v2.9.1](https://github.com/olefredrik/FoundationPress/tree/v2.9.1) (2017-03-16)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.9.0...v2.9.1)
+
+**Closed issues:**
+
+- Use Mobile menu layout for Tablet and Mobile [\#953](https://github.com/olefredrik/FoundationPress/issues/953)
+- Uncaught TypeError: $ is not a function [\#952](https://github.com/olefredrik/FoundationPress/issues/952)
+- Mobile \(hamburger\) navigation not responding. [\#951](https://github.com/olefredrik/FoundationPress/issues/951)
+- dropdown menu not working [\#948](https://github.com/olefredrik/FoundationPress/issues/948)
+- gulp build error [\#941](https://github.com/olefredrik/FoundationPress/issues/941)
+- Responsive images \(srcset\) and WordPress 4.7 [\#929](https://github.com/olefredrik/FoundationPress/issues/929)
+- Errors while running the production task [\#925](https://github.com/olefredrik/FoundationPress/issues/925)
+- Foundation.js  [\#923](https://github.com/olefredrik/FoundationPress/issues/923)
+- Copy task: Motion UI and What Input [\#922](https://github.com/olefredrik/FoundationPress/issues/922)
+- Maybe add node version somewhere at first install? [\#819](https://github.com/olefredrik/FoundationPress/issues/819)
+
+**Merged pull requests:**
+
+- Update PHP versions to use in Travis CI Build Checks [\#960](https://github.com/olefredrik/FoundationPress/pull/960) ([olefredrik](https://github.com/olefredrik))
+- Minor Video Embed Optimization [\#958](https://github.com/olefredrik/FoundationPress/pull/958) ([EricRihlmann](https://github.com/EricRihlmann))
+- Clean Up JS and Expand Responsive Video Functionality [\#957](https://github.com/olefredrik/FoundationPress/pull/957) ([EricRihlmann](https://github.com/EricRihlmann))
+- Fix Travis CI Build Errors [\#956](https://github.com/olefredrik/FoundationPress/pull/956) ([EricRihlmann](https://github.com/EricRihlmann))
+- Fix Mobile Menu Button AKA Hamburger [\#955](https://github.com/olefredrik/FoundationPress/pull/955) ([EricRihlmann](https://github.com/EricRihlmann))
+- Solve/Avoid JS Conflict by Replacing '$' with 'jQuery' [\#954](https://github.com/olefredrik/FoundationPress/pull/954) ([EricRihlmann](https://github.com/EricRihlmann))
+- update bower version [\#946](https://github.com/olefredrik/FoundationPress/pull/946) ([gpspake](https://github.com/gpspake))
+- Responsive accordion tabs [\#934](https://github.com/olefredrik/FoundationPress/pull/934) ([olefredrik](https://github.com/olefredrik))
+- Remove to-be deprecated classes from flex-video example [\#928](https://github.com/olefredrik/FoundationPress/pull/928) ([conorbarclay](https://github.com/conorbarclay))
+- Clean up Gulp Copy task. [\#927](https://github.com/olefredrik/FoundationPress/pull/927) ([populationtwo](https://github.com/populationtwo))
+
+## [v2.9.0](https://github.com/olefredrik/FoundationPress/tree/v2.9.0) (2016-12-15)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.8.0...v2.9.0)
+
+**Closed issues:**
+
+- how to @import absolute path write？ [\#924](https://github.com/olefredrik/FoundationPress/issues/924)
+- Version number on files not updated to 2.8.0 [\#918](https://github.com/olefredrik/FoundationPress/issues/918)
+- Is FoundationPress Updated? [\#916](https://github.com/olefredrik/FoundationPress/issues/916)
+- jQuery error from 'source' folder [\#910](https://github.com/olefredrik/FoundationPress/issues/910)
+- Sudden error when running "npm run watch" [\#890](https://github.com/olefredrik/FoundationPress/issues/890)
+- node.js  [\#882](https://github.com/olefredrik/FoundationPress/issues/882)
+- Error: Cannot find module 'sparkles' [\#867](https://github.com/olefredrik/FoundationPress/issues/867)
+- Error during npm run build [\#866](https://github.com/olefredrik/FoundationPress/issues/866)
+- data-equalize-on not working [\#813](https://github.com/olefredrik/FoundationPress/issues/813)
+- using xlarge and xxlarge causes warnings [\#801](https://github.com/olefredrik/FoundationPress/issues/801)
+- Modify topbar to accordion menu [\#715](https://github.com/olefredrik/FoundationPress/issues/715)
+
+**Merged pull requests:**
+
+- Foundation v6.3.0 [\#926](https://github.com/olefredrik/FoundationPress/pull/926) ([olefredrik](https://github.com/olefredrik))
+- Added XLarge [\#917](https://github.com/olefredrik/FoundationPress/pull/917) ([alexbohariuc](https://github.com/alexbohariuc))
+- Order placeholders [\#913](https://github.com/olefredrik/FoundationPress/pull/913) ([olefredrik](https://github.com/olefredrik))
+- Update navigation.php [\#911](https://github.com/olefredrik/FoundationPress/pull/911) ([mrsWeasel](https://github.com/mrsWeasel))
+
+## [v2.8.0](https://github.com/olefredrik/FoundationPress/tree/v2.8.0) (2016-10-21)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.7.1...v2.8.0)
+
+**Closed issues:**
+
+- Theme has many PHPCS warnings [\#907](https://github.com/olefredrik/FoundationPress/issues/907)
+- Getting error in npm start [\#906](https://github.com/olefredrik/FoundationPress/issues/906)
+- Is interchange broken? [\#902](https://github.com/olefredrik/FoundationPress/issues/902)
+- npm run watch fails [\#899](https://github.com/olefredrik/FoundationPress/issues/899)
+- "Unexpected character '`'" running npm run production or package [\#898](https://github.com/olefredrik/FoundationPress/issues/898)
+- git clone error [\#892](https://github.com/olefredrik/FoundationPress/issues/892)
+- Cannot find open [\#889](https://github.com/olefredrik/FoundationPress/issues/889)
+- Drop Down Menu Vertical Class can't be removed [\#888](https://github.com/olefredrik/FoundationPress/issues/888)
+- Installing FoundationPress Issues [\#878](https://github.com/olefredrik/FoundationPress/issues/878)
+- Scss import failing [\#804](https://github.com/olefredrik/FoundationPress/issues/804)
+- How to apply styles for different screen sizes [\#791](https://github.com/olefredrik/FoundationPress/issues/791)
+
+**Merged pull requests:**
+
+- Featured image optimization [\#909](https://github.com/olefredrik/FoundationPress/pull/909) ([EricRihlmann](https://github.com/EricRihlmann))
+- Reformat code to fit WP PHPCS standards [\#908](https://github.com/olefredrik/FoundationPress/pull/908) ([Leland](https://github.com/Leland))
+- Added Interchange on featured Images [\#905](https://github.com/olefredrik/FoundationPress/pull/905) ([alexbohariuc](https://github.com/alexbohariuc))
+- Fix 'Posted on ...' for all languages [\#901](https://github.com/olefredrik/FoundationPress/pull/901) ([Martin4ndersen](https://github.com/Martin4ndersen))
+- Add Danish language and fix translation issue with "Posted on ..." [\#900](https://github.com/olefredrik/FoundationPress/pull/900) ([Martin4ndersen](https://github.com/Martin4ndersen))
+- Typo in dropdown font size setting [\#897](https://github.com/olefredrik/FoundationPress/pull/897) ([conorbarclay](https://github.com/conorbarclay))
+- Fix Travis CI Build Errors [\#896](https://github.com/olefredrik/FoundationPress/pull/896) ([EricRihlmann](https://github.com/EricRihlmann))
+- Normalize SCSS [\#894](https://github.com/olefredrik/FoundationPress/pull/894) ([EricRihlmann](https://github.com/EricRihlmann))
+-  Turkish language files added [\#891](https://github.com/olefredrik/FoundationPress/pull/891) ([nurdankiratlioglu](https://github.com/nurdankiratlioglu))
+- Updated README.md with info on packaging the theme to a zip file [\#864](https://github.com/olefredrik/FoundationPress/pull/864) ([colin-marshall](https://github.com/colin-marshall))
+
+## [v2.7.1](https://github.com/olefredrik/FoundationPress/tree/v2.7.1) (2016-09-07)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.7.0...v2.7.1)
+
+**Closed issues:**
+
+- Disable body top padding when using fixed on top bar? [\#885](https://github.com/olefredrik/FoundationPress/issues/885)
+- FP FontAwesome not working/not active? [\#884](https://github.com/olefredrik/FoundationPress/issues/884)
+- Infinite Scroll [\#880](https://github.com/olefredrik/FoundationPress/issues/880)
+- JS error in Safari [\#874](https://github.com/olefredrik/FoundationPress/issues/874)
+
+**Merged pull requests:**
+
+- Use System UI fonts [\#886](https://github.com/olefredrik/FoundationPress/pull/886) ([olefredrik](https://github.com/olefredrik))
+- Update cs\_CZ.po [\#883](https://github.com/olefredrik/FoundationPress/pull/883) ([vladodriver](https://github.com/vladodriver))
+
+## [v2.7.0](https://github.com/olefredrik/FoundationPress/tree/v2.7.0) (2016-09-04)
+[Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.6.2...v2.7.0)
+
+**Implemented enhancements:**
+
+- Responsive images with FoundationPress and Interchange? [\#876](https://github.com/olefredrik/FoundationPress/issues/876)
+
+**Fixed bugs:**
+
+- Blog pagination issue w/ woocommerce - links shift from /blog to /store pages [\#836](https://github.com/olefredrik/FoundationPress/issues/836)
+
+**Closed issues:**
+
+- Building a source project using the packaged archive. [\#881](https://github.com/olefredrik/FoundationPress/issues/881)
+- Install issue [\#877](https://github.com/olefredrik/FoundationPress/issues/877)
+- Caret-down or down arrow not showing when navigation has submenus [\#873](https://github.com/olefredrik/FoundationPress/issues/873)
+- Error: Cannot find module './\_assignValue' [\#870](https://github.com/olefredrik/FoundationPress/issues/870)
+- SSL with FoundationPress [\#868](https://github.com/olefredrik/FoundationPress/issues/868)
+- README.md FoundationPSD link dead [\#865](https://github.com/olefredrik/FoundationPress/issues/865)
+- Layout glitch [\#863](https://github.com/olefredrik/FoundationPress/issues/863)
+- npm install issues [\#861](https://github.com/olefredrik/FoundationPress/issues/861)
+- Browser Sync expects different task handle in Gulpfile [\#860](https://github.com/olefredrik/FoundationPress/issues/860)
+- ACF / Repeater Image Gallery / Light Box conflict [\#853](https://github.com/olefredrik/FoundationPress/issues/853)
+- Current steps to create offcanvas menu on the right? Removed from Customizer? [\#852](https://github.com/olefredrik/FoundationPress/issues/852)
+- How can I get the mobile menu to be on tablet devices as well? [\#847](https://github.com/olefredrik/FoundationPress/issues/847)
+- Only a portion of styles from \_front.scss are compiling. [\#846](https://github.com/olefredrik/FoundationPress/issues/846)
+- Invalid CSS after "}": expected "}", was "" [\#845](https://github.com/olefredrik/FoundationPress/issues/845)
+- Having The Mobile Menu Top Bar Active On iPads [\#844](https://github.com/olefredrik/FoundationPress/issues/844)
+- npm install and npm run watch errors [\#843](https://github.com/olefredrik/FoundationPress/issues/843)
+- npm run watch issue [\#841](https://github.com/olefredrik/FoundationPress/issues/841)
+- fullPage.js npm error [\#838](https://github.com/olefredrik/FoundationPress/issues/838)
+- .. [\#837](https://github.com/olefredrik/FoundationPress/issues/837)
+- Colin's centered menu with logo \(zurb building block\) [\#834](https://github.com/olefredrik/FoundationPress/issues/834)
+- Suggestion: Move template-parts inside page-templates [\#833](https://github.com/olefredrik/FoundationPress/issues/833)
 - Autoprefixer missing -webkit prefixes [\#826](https://github.com/olefredrik/FoundationPress/issues/826)
+- What is the workflow for moving a local dev site to a new computer? [\#817](https://github.com/olefredrik/FoundationPress/issues/817)
+- Toggle search box not working on desktop view [\#802](https://github.com/olefredrik/FoundationPress/issues/802)
+- NPM Error When Using "npm install" [\#790](https://github.com/olefredrik/FoundationPress/issues/790)
+- Paragraph Font Size in \_settings.scss [\#786](https://github.com/olefredrik/FoundationPress/issues/786)
+- Search by author of post? [\#785](https://github.com/olefredrik/FoundationPress/issues/785)
+- \_settings.scss and custom CSS [\#781](https://github.com/olefredrik/FoundationPress/issues/781)
+- NPM errors after migrating project to a new Mac [\#773](https://github.com/olefredrik/FoundationPress/issues/773)
+- WordPress Site Icon [\#766](https://github.com/olefredrik/FoundationPress/issues/766)
+- localhost:3000 issue [\#749](https://github.com/olefredrik/FoundationPress/issues/749)
+- Sticky Footer [\#674](https://github.com/olefredrik/FoundationPress/issues/674)
+- Bower install js compile errors [\#673](https://github.com/olefredrik/FoundationPress/issues/673)
+- Errors on installation [\#665](https://github.com/olefredrik/FoundationPress/issues/665)
+
+**Merged pull requests:**
+
+- Fix broken link [\#879](https://github.com/olefredrik/FoundationPress/pull/879) ([olefredrik](https://github.com/olefredrik))
+- Add missing comment on variable [\#869](https://github.com/olefredrik/FoundationPress/pull/869) ([olefredrik](https://github.com/olefredrik))
+- Remove executable permissions for files [\#858](https://github.com/olefredrik/FoundationPress/pull/858) ([pmodin](https://github.com/pmodin))
+- Add an .editorconfig file [\#857](https://github.com/olefredrik/FoundationPress/pull/857) ([Benjaminsson](https://github.com/Benjaminsson))
+- Fix WP coding standards violations [\#855](https://github.com/olefredrik/FoundationPress/pull/855) ([olefredrik](https://github.com/olefredrik))
+- Hebrew translations [\#850](https://github.com/olefredrik/FoundationPress/pull/850) ([elicohenator](https://github.com/elicohenator))
+- Bugfix for figure tag [\#842](https://github.com/olefredrik/FoundationPress/pull/842) ([derweili](https://github.com/derweili))
+- Introducing the\_post\_navigation and edit\_post\_link [\#839](https://github.com/olefredrik/FoundationPress/pull/839) ([Eccola](https://github.com/Eccola))
+- Update theme-support.php [\#835](https://github.com/olefredrik/FoundationPress/pull/835) ([Gilmoursa](https://github.com/Gilmoursa))
+- Switch to gulp-clean-css from deprecated gulp-minify-css [\#824](https://github.com/olefredrik/FoundationPress/pull/824) ([jmbarlow](https://github.com/jmbarlow))
 
 ## [v2.6.2](https://github.com/olefredrik/FoundationPress/tree/v2.6.2) (2016-06-09)
 [Full Changelog](https://github.com/olefredrik/FoundationPress/compare/v2.6.1...v2.6.2)
@@ -259,8 +563,8 @@
 - Spelling changes [\#632](https://github.com/olefredrik/FoundationPress/pull/632) ([alexanderlperez](https://github.com/alexanderlperez))
 - Added button for TinyMCE shortcodes with popup window [\#630](https://github.com/olefredrik/FoundationPress/pull/630) ([colin-marshall](https://github.com/colin-marshall))
 - Added missing angle bracket [\#629](https://github.com/olefredrik/FoundationPress/pull/629) ([colin-marshall](https://github.com/colin-marshall))
-- Added Wordpress Coding Standards Sniffs to Gulp [\#626](https://github.com/olefredrik/FoundationPress/pull/626) ([josh-rathke](https://github.com/josh-rathke))
-- Shortcode implementation [\#625](https://github.com/olefredrik/FoundationPress/pull/625) ([josh-rathke](https://github.com/josh-rathke))
+- Added Wordpress Coding Standards Sniffs to Gulp [\#626](https://github.com/olefredrik/FoundationPress/pull/626) ([joshrathke](https://github.com/joshrathke))
+- Shortcode implementation [\#625](https://github.com/olefredrik/FoundationPress/pull/625) ([joshrathke](https://github.com/joshrathke))
 - Wrap youtube and vimeo vids in flex-video [\#620](https://github.com/olefredrik/FoundationPress/pull/620) ([olefredrik](https://github.com/olefredrik))
 - Changed WP sticky post class to .wp-sticky [\#618](https://github.com/olefredrik/FoundationPress/pull/618) ([colin-marshall](https://github.com/colin-marshall))
 - Fixed more instances of duplicate class attributes in templates [\#617](https://github.com/olefredrik/FoundationPress/pull/617) ([colin-marshall](https://github.com/colin-marshall))
@@ -272,7 +576,7 @@
 
 **Implemented enhancements:**
 
-- Added Size Class Back Into Image Tag Within Content Body [\#574](https://github.com/olefredrik/FoundationPress/pull/574) ([josh-rathke](https://github.com/josh-rathke))
+- Added Size Class Back Into Image Tag Within Content Body [\#574](https://github.com/olefredrik/FoundationPress/pull/574) ([joshrathke](https://github.com/joshrathke))
 
 **Fixed bugs:**
 
@@ -303,7 +607,7 @@
 - Improved foundation.scss file [\#606](https://github.com/olefredrik/FoundationPress/pull/606) ([colin-marshall](https://github.com/colin-marshall))
 - Duplicate $global-margin variable [\#603](https://github.com/olefredrik/FoundationPress/pull/603) ([jcallery](https://github.com/jcallery))
 - Update featured-image.php [\#600](https://github.com/olefredrik/FoundationPress/pull/600) ([bej-soan](https://github.com/bej-soan))
-- Fixed Undefined Variable Bug Found in \#594 [\#597](https://github.com/olefredrik/FoundationPress/pull/597) ([josh-rathke](https://github.com/josh-rathke))
+- Fixed Undefined Variable Bug Found in \#594 [\#597](https://github.com/olefredrik/FoundationPress/pull/597) ([joshrathke](https://github.com/joshrathke))
 - Gulp package task added [\#593](https://github.com/olefredrik/FoundationPress/pull/593) ([colin-marshall](https://github.com/colin-marshall))
 - Remove wp versions filter to support cdn caching [\#592](https://github.com/olefredrik/FoundationPress/pull/592) ([KLVTZ](https://github.com/KLVTZ))
 - Fixed JavaScript minify [\#591](https://github.com/olefredrik/FoundationPress/pull/591) ([colin-marshall](https://github.com/colin-marshall))
@@ -870,11 +1174,11 @@
 - Add Brazilian Portuguese translation [\#316](https://github.com/olefredrik/FoundationPress/pull/316) ([igarcez](https://github.com/igarcez))
 - Bugfix/update text domain [\#315](https://github.com/olefredrik/FoundationPress/pull/315) ([olefredrik](https://github.com/olefredrik))
 - Updated docs [\#310](https://github.com/olefredrik/FoundationPress/pull/310) ([olefredrik](https://github.com/olefredrik))
-- Improved Method to Check For Direct Access to a File [\#309](https://github.com/olefredrik/FoundationPress/pull/309) ([josh-rathke](https://github.com/josh-rathke))
+- Improved Method to Check For Direct Access to a File [\#309](https://github.com/olefredrik/FoundationPress/pull/309) ([joshrathke](https://github.com/joshrathke))
 - Added link to integration guide for Sensei LMS from WooThemes [\#307](https://github.com/olefredrik/FoundationPress/pull/307) ([olefredrik](https://github.com/olefredrik))
-- Updated Action Hooks and Classes for Wordpress Coding Standards [\#298](https://github.com/olefredrik/FoundationPress/pull/298) ([josh-rathke](https://github.com/josh-rathke))
-- Wordpress Coding Standards & Unit Testing Setup via Travis CI [\#288](https://github.com/olefredrik/FoundationPress/pull/288) ([josh-rathke](https://github.com/josh-rathke))
-- Enqueue Main Stylesheet Using wp\_enqueue\_style For WP Coding Standards [\#285](https://github.com/olefredrik/FoundationPress/pull/285) ([josh-rathke](https://github.com/josh-rathke))
+- Updated Action Hooks and Classes for Wordpress Coding Standards [\#298](https://github.com/olefredrik/FoundationPress/pull/298) ([joshrathke](https://github.com/joshrathke))
+- Wordpress Coding Standards & Unit Testing Setup via Travis CI [\#288](https://github.com/olefredrik/FoundationPress/pull/288) ([joshrathke](https://github.com/joshrathke))
+- Enqueue Main Stylesheet Using wp\_enqueue\_style For WP Coding Standards [\#285](https://github.com/olefredrik/FoundationPress/pull/285) ([joshrathke](https://github.com/joshrathke))
 - Multi-level off-canvas menu [\#282](https://github.com/olefredrik/FoundationPress/pull/282) ([Tralapo](https://github.com/Tralapo))
 - Shorter header for UI-toolkits in docs [\#279](https://github.com/olefredrik/FoundationPress/pull/279) ([olefredrik](https://github.com/olefredrik))
 - Updated docs with tutorial for responsive images [\#278](https://github.com/olefredrik/FoundationPress/pull/278) ([olefredrik](https://github.com/olefredrik))
@@ -912,7 +1216,7 @@
 - Wrapped links in list [\#176](https://github.com/olefredrik/FoundationPress/pull/176) ([olefredrik](https://github.com/olefredrik))
 - Updated docs [\#175](https://github.com/olefredrik/FoundationPress/pull/175) ([olefredrik](https://github.com/olefredrik))
 - Feature/update dependencies [\#174](https://github.com/olefredrik/FoundationPress/pull/174) ([olefredrik](https://github.com/olefredrik))
-- Add Custom header in Appearance [\#171](https://github.com/olefredrik/FoundationPress/pull/171) ([mvillagordo](https://github.com/mvillagordo))
+- Add Custom header in Appearance [\#171](https://github.com/olefredrik/FoundationPress/pull/171) ([mnuhell](https://github.com/mnuhell))
 - Update gitignore [\#170](https://github.com/olefredrik/FoundationPress/pull/170) ([olefredrik](https://github.com/olefredrik))
 - Corrected typo from last commit [\#169](https://github.com/olefredrik/FoundationPress/pull/169) ([olefredrik](https://github.com/olefredrik))
 - Added sass-cache to gitignore [\#168](https://github.com/olefredrik/FoundationPress/pull/168) ([olefredrik](https://github.com/olefredrik))
@@ -933,7 +1237,7 @@
 - Spelling correction [\#93](https://github.com/olefredrik/FoundationPress/pull/93) ([jmotes](https://github.com/jmotes))
 - child theme function override for navigation.php [\#88](https://github.com/olefredrik/FoundationPress/pull/88) ([fourhexagons](https://github.com/fourhexagons))
 - Spanish language files added [\#87](https://github.com/olefredrik/FoundationPress/pull/87) ([afermon](https://github.com/afermon))
-- Update navigation.php [\#85](https://github.com/olefredrik/FoundationPress/pull/85) ([gthapar](https://github.com/gthapar))
+- Update navigation.php [\#85](https://github.com/olefredrik/FoundationPress/pull/85) ([thewebsitedev](https://github.com/thewebsitedev))
 - Sidebar on the left - with no file changes! [\#80](https://github.com/olefredrik/FoundationPress/pull/80) ([jmbarlow](https://github.com/jmbarlow))
 - Convert spaces to tabs, fix indention, remove trailing whitespace, ensure newline at EOF. [\#79](https://github.com/olefredrik/FoundationPress/pull/79) ([fk](https://github.com/fk))
 - Removed extra commas, easier child theming [\#78](https://github.com/olefredrik/FoundationPress/pull/78) ([grantnorwood](https://github.com/grantnorwood))

@@ -8,7 +8,9 @@
 
 get_header(); ?>
 
-<div id="single-post" role="main">
+<?php get_template_part( 'template-parts/featured-image' ); ?>
+
+<div class="main-wrap" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -19,18 +21,18 @@ get_header(); ?>
 		</header>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
-
-		<?php
-			if ( has_post_thumbnail() ) :
-				the_post_thumbnail();
-			endif;
-		?>
-
-		<?php the_content(); ?>
-		<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php the_content(); ?>
+			<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+			<?php
+				wp_link_pages(
+					array(
+						'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
+						'after'  => '</p></nav>',
+					)
+				);
+			?>
 			<p><?php the_tags(); ?></p>
 		</footer>
 		<?php the_post_navigation(); ?>
